@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bualimmm.github.io/ar/sitemap.xml
