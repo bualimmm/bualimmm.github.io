@@ -1,7 +1,7 @@
 ---
 layout: page
-title: titles.random
-permalink: /random/
+title: news
+permalink: /news/
 ---
 
 {% include news.liquid %}
