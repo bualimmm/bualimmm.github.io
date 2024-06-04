@@ -22,9 +22,7 @@ nav_order: 1
   <ul class="post-list" {% if site.lang == 'ar' %}dir="rtl" style="text-align: right;"{% endif %}>
     {% assign postlist = site.posts %}
 
-    {% for post in postlist %}
-    {{ puts post.categories }} {# Print the value of post.name to the terminal #}
-    {% if post.categories contains "random" %}
+    
     <li>
 
 {% if post.thumbnail %}
@@ -56,7 +54,6 @@ nav_order: 1
 </div>
 {% endif %}
     </li>
-    {% endif %}
     {% endfor %}
 
   </ul>
