@@ -4,7 +4,6 @@ permalink: /random/
 title: titles.random
 nav: true
 nav_order: 1
-collection: randoms
 ---
 
 <div class="post">
@@ -21,15 +20,11 @@ collection: randoms
   {% endif %}
 
   <ul class="post-list" {% if site.lang == 'ar' %}dir="rtl" style="text-align: right;"{% endif %}>
-    {{ puts page.lang }} {# Print the value of page.lang to the terminal #}
-
-    {% assign postlist = site | random_posts: site.lang %}  
-    {{ postlist | inspect }}
-
-
+    {% assign postlist = site.posts %}
 
     {% for post in postlist %}
-
+    {{ puts post.name }} {# Print the value of post.name to the terminal #}
+    {% if post.name ends_with "random.md" %} 
     <li>
 
 {% if post.thumbnail %}
@@ -61,7 +56,7 @@ collection: randoms
 </div>
 {% endif %}
     </li>
-
+    {% endif %}
     {% endfor %}
 
   </ul>
