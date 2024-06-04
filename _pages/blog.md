@@ -124,7 +124,11 @@ pagination:
 
 {% if post.thumbnail %}
 
-<div class="row">
+{% if site.lang == 'ar' %}
+  <div class="row" dir="rtl" style="text-align: right;">
+{% else %}
+  <div class="row">
+{% endif %}
           <div class="col-sm-9">
 {% endif %}
         <h3>
