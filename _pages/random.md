@@ -23,6 +23,8 @@ collection: randoms
   <ul class="post-list" {% if site.lang == 'ar' %}dir="rtl" style="text-align: right;"{% endif %}>
     {% assign postlist = site | random_posts: page.lang %}  
 
+
+
     {% for post in postlist %}
 
     <li>
