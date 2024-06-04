@@ -140,8 +140,11 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
+        {% if site.lang == 'ar' %}
+          {{ post.date | date: '%B %d, %Y' }} &nbsp; &middot; &nbsp; {{ read_time }} دقيقة قراءة
+        {% else %}
+          {{ read_time }} min read &nbsp; &middot; &nbsp; {{ post.date | date: '%B %d, %Y' }}
+        {% endif %}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
