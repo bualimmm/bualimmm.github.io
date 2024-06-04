@@ -5,6 +5,8 @@ module Jekyll
         randoms_collection.docs
           .select { |doc| doc.url.start_with?("/#{locale}/random/") }
           .sample(limit)
+        puts "Filtered documents for locale '#{locale}':"  # Debugging output
+        filtered_docs.each { |doc| puts doc.path }
       end
     end
   end
