@@ -25,6 +25,7 @@ collection: randoms
     {{ postlist | inspect }}
 
 
+
     {% for post in postlist %}
 
     <li>
