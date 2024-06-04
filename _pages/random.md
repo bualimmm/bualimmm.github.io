@@ -23,8 +23,8 @@ nav_order: 1
     {% assign postlist = site.posts %}
 
     {% for post in postlist %}
-    {{ puts post.name }} {# Print the value of post.name to the terminal #}
-    {% if post.name ends_with "random.md" %} 
+    {{ puts post.categories }} {# Print the value of post.name to the terminal #}
+    {% if post.categories contains "random" %}
     <li>
 
 {% if post.thumbnail %}
