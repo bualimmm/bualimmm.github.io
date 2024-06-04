@@ -1,6 +1,6 @@
 ---
 layout: post
-title: اينش
+title: اينشتاين
 date: 2015-03-15 16:40:16
 description: المعارك
 tags: 

@@ -126,10 +126,12 @@ pagination:
 
 {% if site.lang == 'ar' %}
   <div class="row" dir="rtl" style="text-align: right;">
+  <div class="col-sm-9">
 {% else %}
-  <div class="row">
+  <div class="row"
+  <div class="col-sm-9">
 {% endif %}
-          <div class="col-sm-9">
+          
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
