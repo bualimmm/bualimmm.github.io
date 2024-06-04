@@ -109,6 +109,7 @@ pagination:
     {% endif %}
 
     {% for post in postlist %}
+    {% unless post.categories contains "random" %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
@@ -183,7 +184,7 @@ pagination:
 </div>
 {% endif %}
     </li>
-
+    {% endunless %}
     {% endfor %}
 
   </ul>
