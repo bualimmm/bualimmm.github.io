@@ -6,7 +6,7 @@ nav: true
 nav_order: 1
 pagination:
   enabled: false
-  collection: posts
+  collection: randoms
   permalink: /page/:num/
   per_page: 5
   sort_field: date
