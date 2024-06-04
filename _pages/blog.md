@@ -101,8 +101,7 @@ pagination:
 
 {% endif %}
 
-  <ul class="post-list">
-
+  <ul class="post-list" {% if site.lang == 'ar' %}dir="rtl" style="text-align: right;"{% endif %}>
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
@@ -124,14 +123,8 @@ pagination:
 
 {% if post.thumbnail %}
 
-{% if site.lang == 'ar' %}
-  <div class="row" dir="rtl" style="text-align: right;">
-  <div class="col-sm-9">
-{% else %}
-  <div class="row"
-  <div class="col-sm-9">
-{% endif %}
-          
+<div class="row">
+          <div class="col-sm-9">
 {% endif %}
         <h3>
         {% if post.redirect == blank %}
