@@ -175,6 +175,9 @@ disqus_shortname: al-folio # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
+  randoms:
+    output: true
+    permalink: /random/:path/
   news:
     defaults:
       layout: post
