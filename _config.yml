@@ -177,7 +177,10 @@ disqus_shortname: al-folio # put your disqus shortname
 collections:
   randoms:
     output: true
-    permalink: /:lang/random/:path/
+    default_locale: en
+    locales:
+      - en
+      - ar
   news:
     defaults:
       layout: post
