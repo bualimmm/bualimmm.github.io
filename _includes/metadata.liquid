@@ -26,17 +26,22 @@
   {% else %}
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
+  {% if page.title startswith "titles." %}
+    {% assign new_title = page.title | remove_first: "titles." %}
+  {% else %}
+    {% assign new_title = page.title %}
+  {% endif %}
   {% if page.url == '/blog/index.html' %}
-    {{ site.blog_nav_title }} | {{ title }}
-  {% elsif page.url contains '/blog/' %}
-    {{ page.title }} | {{ title }}
-  {%- elsif page.title contains 'Announcement' -%}
+    {{ new_title }} | {{ title }}
+  {% elsif page.title != 'blank' and page.url != '/' %}
+    {% if page.title == null or page.title == '' %}
+      {{ page.date | date: '%Y' }} | {{ title }}
+    {% else %}
+      {{ new_title }} | {{ title }}
+    {% endif %}
+  {% else %}
     {{ title }}
-  {%- elsif page.title != 'blank' and page.url != '/' -%}
-    {% t page.title %} | {{ title }}
-  {%- else -%}
-    {{ title }}
-  {%- endif -%}
+  {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
