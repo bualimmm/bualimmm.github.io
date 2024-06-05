@@ -3,3 +3,6 @@ titles:
   blog: blog
   random: random
   unk: page not found
+news:
+  titles:
+    news2: A long announcement with details

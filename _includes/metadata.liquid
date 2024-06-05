@@ -30,6 +30,8 @@
     {{ site.blog_nav_title }} | {{ title }}
   {% elsif page.url contains '/blog/' %}
     {{ page.title }} | {{ title }}
+  {%- elsif page.title contains 'Announcement' -%}
+    {{ title }}
   {%- elsif page.title != 'blank' and page.url != '/' -%}
     {% t page.title %} | {{ title }}
   {%- else -%}
