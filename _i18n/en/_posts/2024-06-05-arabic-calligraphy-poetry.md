@@ -5,7 +5,6 @@ date: 2024-06-05
 description:
 tags:
 categories: random
-thumbnail: assets/img/cal.jpg
 ---
 
 <div class="row mt-3">
