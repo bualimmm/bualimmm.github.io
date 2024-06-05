@@ -5,7 +5,6 @@ date: 2024-06-05
 description: documentation of my current thoughts about intelligence
 tags:
 categories:
-giscus_comments: true
 ---
 
 I just finished up a course on NeuroSymbolic AI, and there was this one question that kept popping up: What is intelligence, anyway? It seemed that field experts traditionally believed intelligence to be the human ability to use complex symbols, such as language, for communication. 

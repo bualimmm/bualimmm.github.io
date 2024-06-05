@@ -5,7 +5,6 @@ date: 2024-06-05
 description:
 tags:
 categories: random
-giscus_comments: true
 thumbnail: assets/img/cal.jpg
 ---
 
