@@ -26,11 +26,16 @@
   {% else %}
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
-  {% if page.title startswith "titles." %}
-    {% assign new_title = page.title | remove_first: "titles." %}
-  {% else %}
-    {% assign new_title = page.title %}
-  {% endif %}
+
+
+  {% assign title_parts = page.title | split: "titles." %}
+    {% if title_parts.size > 1 %}
+      {% assign new_title = title_parts[1] %}
+    {% else %}
+      {% assign new_title = page.title %}
+    {% endif %}
+
+
   {% if page.url == '/blog/index.html' %}
     {{ new_title }} | {{ title }}
   {% elsif page.title != 'blank' and page.url != '/' %}
