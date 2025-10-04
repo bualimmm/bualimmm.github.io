@@ -1,4 +1,4 @@
-I'm a current CS Master's student at KAUST, where I'm fortunate to be working under the guidance of Professor Robert Hoehndorf. While also engaging in data science projects at Mozn.
+My core obsession now is building AI systems that are not just intelligent, but truly valuable, reliable, and scalable. I believe innovation happens at the intersection of technology and people, so I spend my time thinking not only about systems, but about the vision, processes, and culture that empower people to innovate and  build great things.
 
 I try to navigate the fine line between productivity and joy, directness and sarcasm. I enjoy asking questions, learning new things, engaging in discussions with interesting people, and solving problems. My questions often revolve around artificial intelligence and human experience.
 
